@@ -31,6 +31,11 @@ public class Quiz02 {
 //		}
 		
 		
+		//문제 3번 다른형식 >> 위에보다 메모리를 덜 잡아 먹기때문에 훨씬 더 효율적인 코드가 될 수 있다.
+//		for ( int i = 3; i <= 50; i += 3) {
+//			System.out.println(i + " ");
+//		}
+		
 		
 		//문제 4번
 //		int j = 0;
@@ -47,16 +52,41 @@ public class Quiz02 {
 		
 		
 		//문제 5번
+//		
+//		Scanner scan = new Scanner(System.in);
+//		System.out.println("단수를 입력하세요 : ");
+//		int a = scan.nextInt();
+//		
+//		int i = 1;
+//		
+//		for ( i = 1; i<= 9 ; i++ ) {
+//			System.out.println(a + " X " + i + "=" + a*i);
+//		}
+//		
 		
-		Scanner scan = new Scanner(System.in);
-		System.out.println("단수를 입력하세요 : ");
-		int a = scan.nextInt();
 		
-		int i = 1;
+		//break 문제 1
+//		Scanner scan = new Scanner(System.in);
+//		
+//		int a = 1;
+//		while ( a >0) {
+//			System.out.print("수를 입력하세요 :");
+//			int b =scan.nextInt();
+//			if ( b ==0) {
+//				System.out.println("끝");
+//				break;
+//			} 
+//			a++;
+//		}
 		
-		for ( i = 1; i<= 9 ; i++ ) {
-			System.out.println(a + " X " + i + "=" + a*i);
-		}
+		
+		// break 문제 2
+//		int j = 0;
+//		for ( int i = 3 ; i <= 50; i+=3) {
+//			j += i;
+//		
+//		}
+//		System.out.println(j);
 		
 		
 	}
