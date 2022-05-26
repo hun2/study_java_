@@ -69,7 +69,7 @@ public class Quiz02 {
 //		Scanner scan = new Scanner(System.in);
 //		
 //		int a = 1;
-//		while ( a >0) {
+//		while ( true) {
 //			System.out.print("수를 입력하세요 :");
 //			int b =scan.nextInt();
 //			if ( b ==0) {
@@ -82,11 +82,58 @@ public class Quiz02 {
 		
 		// break 문제 2
 //		int j = 0;
-//		for ( int i = 3 ; i <= 50; i+=3) {
+//		for ( int i = 3 ; i <= 50; i++) {
+//			if ( i % 3 !=0) {
+//				continue;
+//				
+//			} 
 //			j += i;
 //		
 //		}
 //		System.out.println(j);
+		
+		
+		
+		
+		// 종합문제 1번
+//		Scanner scan = new Scanner(System.in);
+//		System.out.print("수를 입력하세요 : ");
+//		int a = scan.nextInt();
+//		int b = 0;
+//		for ( int i = 1; i <= a; i++) {
+//			b += i;
+//			
+//		}
+//		System.out.println(b);
+		
+		
+		
+		// 종합문제 2번 팩토리얼 
+//		Scanner scan = new Scanner(System.in);
+//		System.out.print("수를 입력하세요 :");
+//		int a = scan.nextInt();
+//		int b = 1;
+//		for ( int i = 1; i<=a; i++) {
+//			b *= i;
+//			
+//			
+//			
+//		}
+//		System.out.println(b);
+		
+		
+		
+		
+		 //종합문제 3번 약수 구하기
+		Scanner scan = new Scanner(System.in);
+		System.out.print("수를 입력하세요 :");
+		int a = scan.nextInt();
+		int b ;
+		for ( b = 1; b <= a ; b++) {
+			if( a % b == 0) {
+				System.out.println(b);
+			} 
+		}
 		
 		
 	}

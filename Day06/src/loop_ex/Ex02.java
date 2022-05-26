@@ -30,15 +30,15 @@ public class Ex02 {
 //			System.out.println("안녕");
 //		}
 		
-		
-		int i = 1;
-		int j = 0;
-		for( i = 1; i<=100; i++) {
-			j += i;
-			
-		}
-		System.out.println(j);
-		
+//		
+//		int i = 1;
+//		int j = 0;
+//		for( i = 1; i<=100; i++) {
+//			j += i;
+//			
+//		}
+//		System.out.println(j);
+//		
 		
 		
 //		int i = 1;
@@ -51,6 +51,52 @@ public class Ex02 {
 //		}
 //		System.out.println(j);
 //		
+		
+		
+		//무한루프
+//		int i = 0;
+//		while ( true) {
+//			if ( i == 5) {
+//				break;
+//			}
+//			System.out.println("무한루프");
+//			i++;
+//			
+//		}
+		
+//		int i = 0 ;
+//		while ( i <5 ) {
+//			System.out.println("무한루프");
+//			i++;
+//		}
+		
+		
+		// continue 
+		// 1~10까지의 수 중에서 4의 배수 일 때 숫자를 출력하지 않기
+		// if 문으로 처리
+//		for ( int i = 1 ; i <= 10; i++) {
+//			if ( i %4 ==0) { 
+//				System.out.print(" ");
+//			}
+//			else {
+//				System.out.print(i);
+//			}
+//		}
+		
+		
+		//continue 문으로 처리
+//		for ( int i = 1; i <= 10; i++) {
+//			if ( i %4 ==0) {
+//				continue;
+//			}else {
+//				System.out.print(i+ " ");
+//			}
+//		}
+		
+		
+		
+		
+		
 	}
 
 }
