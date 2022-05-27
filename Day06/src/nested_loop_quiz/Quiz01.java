@@ -8,7 +8,7 @@ public class Quiz01 {
 //			for (int j = 1; j <= 6; j++) {
 //				System.out.print("("+ i + "," + j + ") ");
 //				
-//			}
+//			}System.out.println("");
 //		}
 		
 		
@@ -37,7 +37,7 @@ public class Quiz01 {
 //				System.out.print( "*");
 //			}System.out.println("");
 //		}
-		
+//		
 		
 		
 		//거꾸로된 삼각형 ( 왼쪽)
@@ -54,25 +54,25 @@ public class Quiz01 {
 		
 		
 		//피라미드 
-//		int a = 0;
-//
-//		for ( int i = 0; i <= 5; i++) {
-//
-//			for ( int j = 0; j < 9-i ; j++ ) {
-//
-//				System.out.print("a");
-//
-//			}
-//
-//			for ( int j = 0; j < 2*i+1; j++) {
-//
-//				System.out.print("*");
-//
-//			}
-//
-//			System.out.println("");
-//
-//		}
+		int a = 0;
+
+		for ( int i = 0; i <= 5; i++) {
+
+			for ( int j = 0; j < 9-i ; j++ ) {
+
+				System.out.print(" ");
+
+			}
+
+			for ( int j = 0; j < 2*i+1; j++) {
+
+				System.out.print("*");
+
+			}
+
+			System.out.println("");
+
+		}
 		
 		
 	}

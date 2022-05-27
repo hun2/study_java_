@@ -1,5 +1,7 @@
 package nested_loop_ex;
 
+import java.util.Scanner;
+
 public class Ex01 {
 
 	public static void main(String[] args) {
@@ -18,16 +20,38 @@ public class Ex01 {
 //			System.out.println("스쿼트 " + i + "세트째");
 //		}
 		
+		Scanner scan = new Scanner(System.in);
+		System.out.print("출력 하세요 :");
+		int a =scan.nextInt();
 		
 		
-		for ( int i = 0; i < 5; i ++) {
-			for (int j = 0; j < 5; j++) {
-				System.out.print("*");
-			}
-			System.out.println("");
+		
+		
+//		for ( int i = 1; i <= a; i++) {
+//			int b = 0;
+//			for (int j = 1; j <= i; j++) {
+//				
+//				if (j ==1) {
+//					b=i;
+//					System.out.print(b+ ",");
+//				} else {
+//					b=b+(a-j)+1;
+//					System.out.print(b+ ",");
+//				}
+//			} System.out.println();
+//		}
+		
+		
+		for ( int i = 1; i <= a; i++) {
+			int b = 0;
+			for (int j = 1; j <= i; j++) {
+				System.out.print(i);
+				
+				
+			} System.out.println();
 		}
 		
 		
+		
 	}
-
 }
