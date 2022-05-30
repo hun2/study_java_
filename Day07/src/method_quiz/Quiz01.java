@@ -36,10 +36,12 @@ public class Quiz01 {
 	
 	// true false 타입으로 조질거면 이 방법도 가능하다.
 	public static boolean test4(int num1) {
-		if ( num1 % 2 ==0) {
-			return true;
-		} return false;
+//		if ( num1 % 2 ==0) {
+//			return true;
+//		} return false;
 		
+		//삼항 연산자, 삼항조건문 
+		return num1 % 2 == 0 ? true : false;
 		
 	}
 	
@@ -74,10 +76,10 @@ public class Quiz01 {
 		
 		
 		//4번
-//		System.out.print("숫자를 입력하세요 : ");
-//		int a =scan.nextInt();
-//		test3(a);
-		
+		System.out.print("숫자를 입력하세요 : ");
+		int a =scan.nextInt();
+		test4(a);
+		System.out.println(test4(a));
 		
 	}	
 
