@@ -4,65 +4,84 @@ public class Quiz01 {
 
 	public static void main(String[] args) {
 			
+		
 		int[] numbers = {3, 8, 9, 4, 2, 1, 7, 5};
-		
-		
-		//문제 1번. 배열의 4번째 값을 6으로 바꾸세요.
-		
-		numbers[3] = 6;
-		
-		
-		//문제 2. 배열의 값을 순서대로 출력하세요.
 
-//		for ( int i = 0; i < numbers.length; i++) {
-//			System.out.println(numbers[i]);
-//		}
-//		
-		
-		
-//		//문제 3번. 배열의 값의 반대 순서(역순)로 출력하세요.
-//		for ( int i = 7; i<numbers.length; i--) {
-//			System.out.println(numbers[i]);
-//		}
-		
-		
-//		//문제 4번. 배열의 짝수번째 위치에 있는 값들을 출력하세요.
-//		for ( int i = 2; i<numbers.length; i*2) {
-//			System.out.println(numbers[i]);
-//		}
-		
-		//문제 5번 . 배열의 값 중 2가 들어 있는 index를 출력하세요.
-		
-//		for ( int i = 1; i<numbers.length; i++) {
-//			if ( numbers[i] == 2) {
-//				System.out.print("2가 들어 있는 index는 " + i);
-//			}
-//		}
-		
-		// 문제 6번. 배열의 값 중 가장 큰 값을 출력하세요.
-		int max = numbers[0];
-		for (int i = 0; i<numbers.length; i++) {
-			
-			
-			if ( numbers[1] > numbers[0]) {
-				max = numbers[1];
-			} if (numbers[2] > numbers[0]) {
-				max = numbers[2];
-			} if (numbers[3] > numbers[0]) {
-				max = numbers[3];
-			} if ( numbers[4] > numbers[0]) {
-				max = numbers[4];
-			} if ( numbers[5] > numbers[0]) {
-				max = numbers[5];
-			} if ( numbers[6] > numbers[0]) {
-				max = numbers[6];
-			} if ( numbers[7] > numbers[0]) {
-				max = numbers[7];
-			}
-			
-		}
-		
-		
+
+        // 1번 배열의 4번째 값을 6으로 바꾸세요.
+        numbers[3] = 6;
+       
+
+        // //2번 배열의 값을 순서대로 출력하세요.
+        // for ( int i = 0; i<numbers.length; i++) {
+        //     System.out.println(numbers[i]);
+        // }
+       
+
+        //3번 배열의 값을 역순으로 출력하세요.
+        // int i;
+        // for ( i = numbers.length-1; 0<=i; i--) {
+        //     System.out.println(numbers[i]);
+        // }
+       
+
+        //4번 배열의 짝수번째 위치에 있는 값들을 출력하세요.
+
+        // for ( int j = 1; j<numbers.length; j++) {
+        //     if ( j % 2 != 0) {
+        //         System.out.println(numbers[j]);
+        //     }
+        // }
+       
+
+
+        // 5번 배열의 값 중 2가 들어 있는 index를 출력하세요.
+        // for ( int i = 1; i<numbers.length; i++) {
+        //     if ( numbers[i] == 2) {
+        //         System.out.println("2가 들어있는 index는 " + i);
+        //     }
+        // }
+
+
+
+        // 6번 배열의 값 중 가장 큰 값을 출력하세요.
+       
+        // int max = numbers[0];
+        // for ( int i = 1; i<numbers.length; i++) {
+        //     if (numbers[i] > max) {
+        //         max = numbers[i];
+        //     }
+           
+        // }
+        // System.out.println("가장 큰 값은 " + max);
+
+
+
+        // 7번 배열의 값 중 가장 작은 수가 저장된 index를 출력하세요.
+
+        // int min = numbers[0];
+        // int minindex = 0;
+        // for ( int i = 1; i<numbers.length; i++) {
+        //     if (numbers[i] < min) {
+        //         min = numbers[i];
+        //         minindex = i;
+               
+        //     }
+           
+        // }
+        // System.out.println("최소값의 인덱스는 " + minindex);
+
+
+        //8번 배열의 모든 수의 평균을 출력하세요.
+       
+        double sum = 0;
+
+        for ( int i = 0; i<numbers.length; i++) {
+                sum  = sum + numbers[i];
+        }
+
+        System.out.println("평균은 " + sum/numbers.length);
+       
 		
 		
 	}
