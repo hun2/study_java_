@@ -4,24 +4,22 @@ public class OmrCardTest {
 
 	public static void main(String[] args) {
 		
+		int sum = 0;
 		Omrcard omercard = new Omrcard();
+
 		omercard.setName("±è±âÈÆ");
 		omercard.setNumber(20200302);
-		omercard.hh(3, 2, 2, 2, 1);
-		
-		OmrCardReader omercar = new OmrCardReader();
-		omercar.test();
+		omercard.setAnswer(new int[] {3,2,5,1,2});
 		
 		
 		
 		
-	
+		OmrCardReader reader = new OmrCardReader(new int[] {2,1,2,2,2});
+		reader.printScore(omercard);
 		
-		System.out.println("ÀÌ¸§ :" + omercard.getName());
-		System.out.println("ÇÐ¹ø :" + omercard.getNumber());
-		System.out.println("Á¡¼ö :"  );
-	
-	
-	}	
+		
+		
+		
+	}
 	
 }

@@ -1,28 +1,50 @@
 package constructor_quiz04;
 
+
 public class OmrCardReader {
 
-	private int a;
-	private int b;
-	private int c;
-	private int d;
-	private int e;
-	private int[] test;
 	
 		
-	public void test () {
-		this.a = 5;
-		this.b = 4;
-		this.c = 3;
-		this.d = 2;
-		this.e = 1;
-		this.test = new int[] {a,b,c,d,e};
+	
+	
+	
+	private int[] test = new int[] {3,5,1,4,2};
+	
+	
+	
+	
+	
+	public OmrCardReader(int[] answer) {
+		this.test = answer;
 	}
+	
+	
+	
+	public void printScore(Omrcard card) {
+		System.out.println(card.getName());
+		System.out.println(card.getNumber());
 		
-	
-	
-	
+		int score = 0;
+		for (int i =0; i < this.test.length; i++) {
+			if (this.test[i] ==  card.getAnswer()[i]) {
+				score += 25;
+			}
+		}
 		
+		
+		System.out.println("Á¡¼ö :" + score);
+		
+		
+		
+		
+		
+		
+		
+		
+	}
+	
+	
+	
 		
 		
 		
