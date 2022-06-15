@@ -41,29 +41,51 @@ public class Quiz03 {
 	
 	public static void main(String[] args) {
 		
-		Scanner scan = new Scanner(System.in);
-        Random rand = new Random();
+			
 
-        Set<String> keys = capitalMap.keySet();
-        List<String> keyList = new ArrayList<>(keys); // 나라이름 List의 index로 문제 낼 것
-        
-        
-        
-        
-        
-        int count = 0;
-        
-        //첫번째 질문
-        System.out.print(keyList.get(rand.nextInt(20)) +"의 수도 이름은?");
-        String answer = scan.next();
-        
-        
-        if (capitalMap.containsValue(answer)) {
-        	System.out.println("정답");
-        	count += 25;
-        } else {
-        	System.out.println("틀렸습니다.");
-        }
+			Scanner scan = new Scanner(System.in);
+	        Random rand = new Random();
+
+	        Set<String> keys = capitalMap.keySet();
+	        List<String> keyList = new ArrayList<>(keys); // 나라이름 List의 index로 문제 낼 것
+
+	        int count = 0;
+	        for (int i =0; i<5; i++) {
+
+	        System.out.print(keyList.get(rand.nextInt(20)) +"의 수도 이름은?");
+	        String answer = scan.next();
+
+	        	if (capitalMap.containsValue(answer)) {
+	        		System.out.println("정답");
+	        		count += 25;
+	        	} else {
+	        		System.out.println("틀렸습니다.");
+	        	}
+
+	        }
+	        
+
+	        System.out.println("총 점수는 :" + count);
+
+	        
+
+			
+
+	        
+
+	        
+
+	        
+
+	        
+
+	        
+
+	        
+
+			
+
+		
         
         
         
